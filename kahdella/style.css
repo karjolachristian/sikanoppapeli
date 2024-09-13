@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#peli-alue {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#asetukset, #peli {
+    display: none;
+}
+input, button {
+    margin: 5px;
+    padding: 5px;
+}
+#pelaajat {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.pelaaja {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.aktiivinen {
+    background-color: #d0f0d0;
+}
+#nopat {
+    font-size: 48px;
+    margin: 20px 0;
+    text-align: center;
+}

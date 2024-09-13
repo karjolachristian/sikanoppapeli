@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐷 Sikanoppapeli 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🐷 Sikanoppapeli yhdellä nopalla 🎮</h1>
+    <button id="etusivulle" role="button" type="button" onclick="window.location.href='../index.html'">Palaa etusivulle!</button>
+    
+    <script src="main.js"></script>
+    <div id="asetukset">
+        <label for="pelaajienMaara">Pelaajien määrä: (Enintään 10)</label>
+        <input type="number" id="pelaajienMaara" min="2" max="10" value="2">
+        <button onclick="asetaPelaajat()">Aseta pelaajat</button>
+    </div>
+
+    <div id="pelaajat"></div>
+
+    <div id="peli">
+        <h2>Vuorossa: <span id="nykyinenPelaaja"></span></h2>
+        <p>Pisteet tällä vuorolla: <span id="vuoroPisteet">0</span></p>
+        <p>Kokonaispisteet: <span id="kokonaisPisteet">0</span></p>
+        <div id="noppa"></div>
+        <button onclick="heita()">Heitä noppaa</button>
+        <button onclick="lopetaVuoro()">Lopeta vuoro</button>
+    </div>
+</body>
+</html>

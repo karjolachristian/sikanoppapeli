@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="etusivulle" role="button" type="button" onclick="window.location.href='../index.html'">Palaa etusivulle!</button>
+    <div id="peli-alue">
+        <div id="asetukset">
+            <h2>Pelaajien määrä:</h2>
+            <input type="number" id="pelaaja-maara" min="2" max="6" value="2">
+            <button onclick="asetaPelaajat()">Aloita peli</button>
+        </div>
+        <div id="peli">
+            <div id="pelaajat"></div>
+            <div id="nopat"></div>
+            <button onclick="heitaNoppaa()">Heitä noppaa</button>
+            <button onclick="lopetaVuoro()">Lopeta vuoro</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

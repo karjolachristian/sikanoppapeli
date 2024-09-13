@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#pelaajat, #peli {
+    display: none;
+}
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+#noppa {
+    font-size: 48px;
+    margin: 20px 0;
+}
